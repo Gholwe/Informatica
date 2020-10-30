@@ -1,0 +1,41 @@
+from flask import Flask, render_template
+
+app = Flask (__name__)
+
+@app.route('/')
+def home():
+    return render_template('home.html')
+    
+@app.route('/youtube')
+def youtube():
+    return render_template('youtube.html')
+
+@app.route('/Wikipedia')
+def Wikipedia():
+    return render_template('Wikipedia.html')
+
+@app.route('/Instagram')
+def Instagram():
+    return render_template('Instagram.html')
+
+@app.route('/Facebook')
+def Facebook():
+    return render_template('Facebook.html')
+
+@app.route('/Spotify')
+def Spotify():
+    return render_template('Spotify.html')
+
+@app.route('/Discord')
+def Discord():
+    return render_template('Discord.html')
+
+@app.route('/Twitch')
+def Twitch():
+    return render_template('Twitch.html')
+
+
+
+
+if __name__ == '__main__':
+        app.run(debug=True)
